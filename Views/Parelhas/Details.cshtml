@@ -1,0 +1,36 @@
+﻿@model ProEvoStats_EVO7.Models.Parelha
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Parelha</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Jogador1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Jogador1.Password)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Jogador2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Jogador2.Password)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Temporada)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Temporada.Descricao)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

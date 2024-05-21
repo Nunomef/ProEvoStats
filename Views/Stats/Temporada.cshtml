@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Classificação Temporada " + ViewBag.TemporadaId;
+}
+
+<h1 class="text-center">@ViewData["Title"]</h1>
+<br />
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        @await Component.InvokeAsync("TemporadaClassificacao", new { temporadaId = ViewBag.TemporadaId })
+    </div>
+    <div class="col-md-2"></div>
+    <br />
+    <div class="col-md-6">
+        @await Component.InvokeAsync("TemporadaParelhas", new { temporadaId = ViewBag.TemporadaId })
+    </div>
+    <div class="col-md-6">
+        @await Component.InvokeAsync("TemporadaEquipas", new { temporadaId = ViewBag.TemporadaId })
+    </div>
+</div>
+<a asp-action="Index">Back to list</a>

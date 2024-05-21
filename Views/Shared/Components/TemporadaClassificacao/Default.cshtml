@@ -1,0 +1,53 @@
+﻿@using ProEvoStats_EVO7.ViewModels
+@model List<TemporadaClassificacaoViewModel>
+
+@{
+    Layout = "_ViewComponentLayout";
+}
+
+<div class="table-responsive">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Jogador</th>
+                <th>J</th>
+                <th></th>
+                <th>V</th>
+                <th>E</th>
+                <th>D</th>
+                <th></th>
+                <th>Gm</th>
+                <th>GS</th>
+                <th>dG</th>
+                <th></th>
+                <th class="text-center">Campeonatos</th>
+                <th>Equipa Principal</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int position = 1;
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@(position++)</td>
+                        <td>@item.Username</td>
+                        <td>@item.JogosDisputados</td>
+                        <td></td>
+                        <td>@item.Vitorias</td>
+                        <td>@item.Empates</td>
+                        <td>@item.Derrotas</td>
+                        <td></td>
+                        <td>@item.GolosMarcados</td>
+                        <td>@item.GolosSofridos</td>
+                        <td>@item.DiferencaDeGolos</td>
+                        <td></td>
+                        <td class="text-center">@item.CampeonatosGanhos</td>
+                        <td>@item.EquipaMaisUsada</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

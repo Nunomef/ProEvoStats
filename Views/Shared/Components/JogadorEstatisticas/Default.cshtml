@@ -1,0 +1,26 @@
+﻿@using ProEvoStats_EVO7.ViewModels
+@model JogadorEstatisticasViewModel
+
+@{
+    Layout = "_ViewComponentLayout";
+}
+
+<div class="list-container">
+    <ul class="list-unstyled stats-list">
+        <li class="clearfix"><strong class="left-text">@ViewBag.Posicao º</strong><span class="right-text">Lugar</span></li>
+        <li class="clearfix"><strong class="left-text">@Model.TemporadasGanhas</strong><span class="right-text">Temporadas</span></li>
+        <li class="clearfix"><strong class="left-text">@Model.CampeonatosGanhos</strong><span class="right-text">Campeonatos</span></li>
+        <li class="clearfix"><strong class="left-text">@Model.JogosDisputados</strong><span class="right-text">Jogos</span></li>
+        <li class="clearfix"><strong class="left-text">@Model.Vitorias</strong><span class="right-text">Vitórias</span></li>
+        <li class="clearfix"><strong class="left-text">@Model.Empates</strong><span class="right-text">Empates</span></li>
+        <li class="clearfix"><strong class="left-text">@Model.Derrotas</strong><span class="right-text">Derrotas</span></li>
+        <li class="clearfix"><strong class="left-text">@Model.GolosMarcados</strong><span class="right-text">Golos Marcados</span></li>
+        <li class="clearfix"><strong class="left-text">@Model.GolosSofridos</strong><span class="right-text">Golos Sofridos</span></li>
+        <li class="clearfix"><strong class="left-text">@Model.DiferencaDeGolos</strong><span class="right-text">Diferença De Golos</span></li>
+    </ul>
+</div>
+<div class="list-container">
+    <ul class="list-unstyled second-list">
+        <li class="clearfix"><strong style="text-center;">@Model.EquipaMaisUsada</strong></li>
+    </ul>
+</div>

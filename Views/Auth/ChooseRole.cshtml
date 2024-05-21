@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escolha o papel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="modal" tabindex="-1" role="dialog" id="chooseRoleModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Escolha o papel</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Como administrador, você pode escolher ir para a secção de administrador ou de jogador.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="/User/UserProfile" class="btn btn-secondary">User</a>
+                    <a href="/Home/Index" class="btn btn-primary">Admin</a>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#chooseRoleModal').modal('show');
+        });
+    </script>
+</body>
+</html>

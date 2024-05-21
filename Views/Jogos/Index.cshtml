@@ -1,0 +1,98 @@
+﻿@model IEnumerable<ProEvoStats_EVO7.Models.Jogo>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<form asp-action="Index" method="post" class="row" id="filterForm">
+    <div class="form-group col-md-4">
+        <label for="temporadaId" class="control-label">Temporada:</label>
+        <select id="temporadaId" name="temporadaId" asp-items="ViewBag.TemporadaId" class="form-control" onchange="document.getElementById('filterForm').submit();">
+            <option value="">Todas</option>
+        </select>
+    </div>
+    <div class="form-group col-md-4">
+        <label for="campeonatoId" class="control-label">Campeonato:</label>
+        <select id="campeonatoId" name="campeonatoId" asp-items="ViewBag.CampeonatoId" class="form-control" onchange="document.getElementById('filterForm').submit();">
+            <option value="">Todos</option>
+        </select>
+    </div>
+    <div class="form-group col-md-4">
+        <label for="campeonatoData" class="control-label">Data do Campeonato:</label>
+        <input type="date" id="campeonatoData" name="campeonatoData" class="form-control" onchange="document.getElementById('filterForm').submit();" />
+    </div>
+    <div class="form-group col-md-12">
+        <a href="@Url.Action("Index", "Jogos")" class="btn btn-secondary">Limpar</a>
+    </div>
+</form>
+<table class="table mt-1">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ResultadoCasa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ResultadoFora)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ParelhaCasa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ParelhaFora)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EquipaCasa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EquipaFora)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Campeonato)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Campeonato.Temporada)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResultadoCasa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResultadoFora)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ParelhaCasa.Jogador1.Username) & @Html.DisplayFor(modelItem => item.ParelhaCasa.Jogador2.Username)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ParelhaFora.Jogador1.Username) & @Html.DisplayFor(modelItem => item.ParelhaFora.Jogador2.Username)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EquipaCasa.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EquipaFora.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Campeonato.Descricao)
+            </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Campeonato.Temporada.Descricao)
+                </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

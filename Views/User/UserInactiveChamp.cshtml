@@ -1,0 +1,53 @@
+﻿@{
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<div class="container-fluid d-flex justify-content-center">
+
+    <div class="col-md-5">
+        <div class="p-5 rounded-lg panel">
+            @await Component.InvokeAsync("CampeonatoClassificacao", new { campeonatoId = ViewBag.CampeonatoId })
+        </div>
+    </div>
+
+    <!-- Accordion -->
+    <div class="col-md-5">
+        <div id="myAccordion">
+
+            <div class="card panel">
+                <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Jogos
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#myAccordion">
+                    <div class="card-body p-5 rounded-lg panel">
+                        @await Component.InvokeAsync("CampeonatoJogos", new { campeonatoId = ViewBag.CampeonatoId })
+                    </div>
+                </div>
+            </div>
+
+            <div class="card panel">
+                <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    Parelhas
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#myAccordion">
+                    <div class="card-body p-5 rounded-lg panel">
+                        @await Component.InvokeAsync("CampeonatoParelhas", new { campeonatoId = ViewBag.CampeonatoId })
+                    </div>
+                </div>
+            </div>
+
+            <div class="card panel">
+                <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                    Equipas
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#myAccordion">
+                    <div class="card-body p-5 rounded-lg panel">
+                        @await Component.InvokeAsync("CampeonatoEquipas", new { campeonatoId = ViewBag.CampeonatoId })
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,99 @@
+﻿* {
+    border: none !important;
+}
+
+
+body {
+    background: url('/images/background1.webp') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.tab-pane {
+    background-color: white !important;
+}
+
+.tab-pane {
+    height: 100%;
+}
+
+    .tab-pane * {
+        margin: 0;
+        padding: 8px;
+    }
+
+.nav-tabs .nav-link.active {
+    border-bottom: none;
+    border: none;
+}
+
+/* Cor de fundo para as abas */
+.nav-tabs .nav-link {
+    background-color: rgba(79, 113, 129, 0.9) !important;
+    color: #bee0ec;
+    border: none;
+}
+
+    /* Cor de fundo para a aba ativa */
+    .nav-tabs .nav-link.active {
+        background-color: rgba(205, 221, 216, 0.7) !important;
+        color: white;
+        border: none;
+    }
+
+/* Cor de fundo para o conteúdo das abas (formulários) */
+.tab-pane {
+    background-color: rgba(205, 221, 216, 0.7) !important;
+}
+
+    /* Cor do texto para todos os elementos dentro do .tab-pane, exceto links */
+    .tab-pane *:not(a) {
+        color: #ebf1ef;
+        font-weight: 600;
+    }
+
+    /* Cor do texto para links dentro do .tab-pane */
+    .tab-pane a {
+        color: rgb(146, 203, 223);
+    }
+
+.col-md-4 {
+    width: 50%;
+    height: 50%;
+    max-width: 20%;
+    margin: auto;
+    border: none;
+}
+
+.tab-content {
+    min-height: 650px;
+}
+
+.form-padding {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn {
+    background-color: #8cc7e4 !important;
+    border-color: #8cc7e4 !important;
+    color: white !important;
+    font-weight: 500px !important;
+}
+
+.btn:hover {
+    background-color: #325367 !important;
+    border-color: #325367 !important;
+    color: #cdddd8 !important;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+}
+

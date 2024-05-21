@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Estatísticas Temporada " + ViewBag.TemporadaId;
+}
+
+<h1 class="text-center">@ViewData["Title"]</h1>
+<br />
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        @await Component.InvokeAsync("JogadorTemporadas", new { jogadorId = ViewBag.Jogador.Id, temporadaId = ViewBag.TemporadaId })
+    </div>
+    <div class="col-md-3"></div>
+</div>
+<a asp-action="Index">Back to list</a>

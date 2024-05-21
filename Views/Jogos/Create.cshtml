@@ -1,0 +1,58 @@
+﻿@model ProEvoStats_EVO7.Models.Jogo
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Jogo</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ResultadoCasa" class="control-label"></label>
+                <input asp-for="ResultadoCasa" class="form-control" />
+                <span asp-validation-for="ResultadoCasa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ResultadoFora" class="control-label"></label>
+                <input asp-for="ResultadoFora" class="form-control" />
+                <span asp-validation-for="ResultadoFora" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ParelhaCasaId" class="control-label"></label>
+                <select asp-for="ParelhaCasaId" class ="form-control" asp-items="ViewBag.ParelhaCasaId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="ParelhaForaId" class="control-label"></label>
+                <select asp-for="ParelhaForaId" class ="form-control" asp-items="ViewBag.ParelhaForaId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="EquipaCasaId" class="control-label"></label>
+                <select asp-for="EquipaCasaId" class ="form-control" asp-items="ViewBag.EquipaCasaId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="EquipaForaId" class="control-label"></label>
+                <select asp-for="EquipaForaId" class ="form-control" asp-items="ViewBag.EquipaForaId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="CampeonatoId" class="control-label"></label>
+                <select asp-for="CampeonatoId" class ="form-control" asp-items="ViewBag.CampeonatoId"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

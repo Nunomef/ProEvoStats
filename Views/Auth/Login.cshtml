@@ -1,0 +1,92 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login or Register</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/css/loginlayout.css" />
+</head>
+<body class="d-flex align-items-center" style="min-height: 100vh;">
+    <div class="container-fluid d-flex justify-content-center">
+        <div class="col-md-4">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                @if (ViewBag.ConfirmPassword == "false")
+                {
+                    <li class="nav-item">
+                        <a class="nav-link" id="login-tab" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="false">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="register-tab" data-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="true">Registro</a>
+                    </li>
+                }
+                else
+                {
+                    <li class="nav-item">
+                        <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="register-tab" data-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">Registro</a>
+                    </li>
+                }
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                    <!-- Formulário de Login -->
+                    <div class="form-padding">
+                        <form method="post" action="/Auth/Login">
+                            <div asp-validation-summary="All" class="text-danger"></div>
+                            <div class="form-group">
+                                <label for="username">Username:</label>
+                                <input type="text" id="username" name="Username" required class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="Password" required class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Login" class="btn btn-primary" />
+                            </div>
+                            <p>Não tem uma conta? <a href="#register" data-toggle="tab">Registre-se</a></p>
+                        </form>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                    <!-- Formulário de Registro -->
+                    <div class="form-padding">
+                        <form method="post" action="/Auth/Register">
+                            <div class="form-group">
+                                <label for="registerUsername">Username:</label>
+                                <input type="text" id="registerUsername" name="Username" required class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label for="registerEmail">Email:</label>
+                                <input type="email" id="registerEmail" name="Email" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label for="registerPassword">Password:</label>
+                                <input type="password" id="registerPassword" name="Password" required class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label for="registerConfirmPassword">Confirm Password:</label>
+                                <input type="password" id="registerConfirmPassword" name="ConfirmPassword" required class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Register" class="btn btn-primary" />
+                            </div>
+                            <p>Já tem uma conta? <a href="#login" data-toggle="tab">Faça login</a></p>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

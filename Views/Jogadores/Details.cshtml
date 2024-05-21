@@ -1,0 +1,60 @@
+﻿@model ProEvoStats_EVO7.Models.Jogador
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Jogador</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-6">
+            <dl class="row">
+                <dt class = "col-sm-2">
+                    @Html.DisplayNameFor(model => model.Username)
+                </dt>
+                <dd class = "col-sm-10">
+                    @Html.DisplayFor(model => model.Username)
+                </dd>
+                <dt class = "col-sm-2">
+                    @Html.DisplayNameFor(model => model.Password)
+                </dt>
+                <dd class = "col-sm-10">
+                    @Html.DisplayFor(model => model.Password)
+                </dd>
+                <dt class = "col-sm-2">
+                    @Html.DisplayNameFor(model => model.Email)
+                </dt>
+                <dd class = "col-sm-10">
+                    @Html.DisplayFor(model => model.Email)
+                </dd>
+                <dt class = "col-sm-2">
+                    @Html.DisplayNameFor(model => model.Role)
+                </dt>
+                <dd class = "col-sm-10">
+                    @Html.DisplayFor(model => model.Role)
+                </dd>
+                <dt class = "col-sm-2">
+                    @Html.DisplayNameFor(model => model.EquipaPref)
+                </dt>
+                <dd class = "col-sm-10">
+                    @Html.DisplayFor(model => model.EquipaPref.Nome)
+                </dd>
+                <dt class = "col-sm-2">
+                    @Html.DisplayNameFor(model => model.Status)
+                </dt>
+                <dd class = "col-sm-10">
+                    @Html.DisplayFor(model => model.Status)
+                </dd>
+            </dl>
+        </div>
+    <div class="col-md-6">
+            @await Component.InvokeAsync("JogadorEstatisticas", new { jogadorId = Model.Id })
+    </div>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

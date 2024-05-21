@@ -1,0 +1,275 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ProEvoStats_EVO7
+build_property.RootNamespace = ProEvoStats_EVO7
+build_property.ProjectDir = C:\Users\NunoMEF\OneDrive - IEFP Formação\Projecto25h\ProEvoStats_EVO7\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\NunoMEF\OneDrive - IEFP Formação\Projecto25h\ProEvoStats_EVO7
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Auth/ChooseRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxDaG9vc2VSb2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Auth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Campeonatos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtcGVvbmF0b3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Campeonatos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtcGVvbmF0b3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Campeonatos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtcGVvbmF0b3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Campeonatos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtcGVvbmF0b3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Campeonatos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtcGVvbmF0b3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Equipas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBhc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Equipas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBhc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Equipas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBhc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Equipas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBhc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Equipas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBhc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Jogadores/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nYWRvcmVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Jogadores/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nYWRvcmVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Jogadores/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nYWRvcmVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Jogadores/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nYWRvcmVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Jogadores/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nYWRvcmVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Jogos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nb3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Jogos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nb3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Jogos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nb3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Jogos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nb3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Jogos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Parelhas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZWxoYXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Parelhas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZWxoYXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Parelhas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZWxoYXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Parelhas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZWxoYXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Parelhas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZWxoYXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Shared/Components/CampeonatoClassificacao/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2FtcGVvbmF0b0NsYXNzaWZpY2FjYW9cRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Shared/Components/CampeonatoEquipas/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2FtcGVvbmF0b0VxdWlwYXNcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Shared/Components/CampeonatoJogos/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2FtcGVvbmF0b0pvZ29zXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Shared/Components/CampeonatoParelhas/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2FtcGVvbmF0b1BhcmVsaGFzXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Shared/Components/EquipaEstatisticas/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRXF1aXBhRXN0YXRpc3RpY2FzXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Shared/Components/JogadoresClassificacao/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSm9nYWRvcmVzQ2xhc3NpZmljYWNhb1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Shared/Components/JogadorEstatisticas/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSm9nYWRvckVzdGF0aXN0aWNhc1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Shared/Components/JogadorTemporadas/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSm9nYWRvclRlbXBvcmFkYXNcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Shared/Components/TemporadaClassificacao/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVGVtcG9yYWRhQ2xhc3NpZmljYWNhb1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Shared/Components/TemporadaEquipas/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVGVtcG9yYWRhRXF1aXBhc1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Shared/Components/TemporadaParelhas/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVGVtcG9yYWRhUGFyZWxoYXNcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Shared/_UserLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VyTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Shared/_ViewComponentLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WaWV3Q29tcG9uZW50TGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Stats/Campeonato.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHNcQ2FtcGVvbmF0by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Stats/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Stats/Jogador.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHNcSm9nYWRvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Stats/Temporada.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHNcVGVtcG9yYWRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Temporadas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVtcG9yYWRhc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Temporadas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVtcG9yYWRhc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Temporadas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVtcG9yYWRhc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Temporadas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVtcG9yYWRhc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Temporadas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVtcG9yYWRhc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/User/GlobalStats.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxHbG9iYWxTdGF0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/User/UserActiveChamp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyQWN0aXZlQ2hhbXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/User/UserActiveTemp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyQWN0aXZlVGVtcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/User/UserInactiveChamp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VySW5hY3RpdmVDaGFtcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/User/UserInactiveTemp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VySW5hY3RpdmVUZW1wLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/User/UserProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyUHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NunoMEF/OneDrive - IEFP Formação/Projecto25h/ProEvoStats_EVO7/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-bsp83jel71

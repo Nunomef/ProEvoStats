@@ -1,0 +1,64 @@
+﻿@model IEnumerable<ProEvoStats_EVO7.Models.Jogo>
+
+<table class="table mt-1">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ResultadoCasa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ResultadoFora)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ParelhaCasa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ParelhaFora)
+            </th>
+            @* <th>
+                @Html.DisplayNameFor(model => model.EquipaCasa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EquipaFora)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Campeonato)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Campeonato.Temporada)
+            </th> *@
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                
+                
+                <td>
+                    @Html.DisplayFor(modelItem => item.ParelhaCasa.Jogador1.Username) & @Html.DisplayFor(modelItem => item.ParelhaCasa.Jogador2.Username)
+                    @Html.DisplayFor(modelItem => item.EquipaCasa.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ResultadoCasa)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ParelhaFora.Jogador1.Username) & @Html.DisplayFor(modelItem => item.ParelhaFora.Jogador2.Username)
+                    @Html.DisplayFor(modelItem => item.EquipaFora.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ResultadoFora)
+                </td>
+                @* <td></td>
+                <td></td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Campeonato.Descricao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Campeonato.Temporada.Descricao)
+                </td> *@
+            </tr>
+        }
+    </tbody>
+</table>

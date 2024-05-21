@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ProEvoStats_EVO7.props" />
+</Project>

@@ -1,0 +1,71 @@
+﻿@using ProEvoStats_EVO7.ViewModels
+@model JogadorTemporadaViewModel
+
+@{
+    Layout = "_ViewComponentLayout";
+}
+
+    <ol class="list-group list-group-numbered">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Posição</div>
+            </div>
+            <div class="text-end">@Model.Posicao º</div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Campeonatos</div>
+            </div>
+            <div class="text-end">@Model.CampeonatosGanhos</div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Jogos</div>
+            </div>
+            <div class="text-end">@Model.JogosDisputados</div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Vitórias</div>
+            </div>
+            <div class="text-end">@Model.Vitorias</div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Empates</div>
+            </div>
+            <div class="text-end">@Model.Empates</div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Derrotas</div>
+            </div>
+            <div class="text-end">@Model.Derrotas</div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Golos Marcados</div>
+            </div>
+            <div class="text-end">@Model.GolosMarcados</div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Golos Sofridos</div>
+            </div>
+            <div class="text-end">@Model.GolosSofridos</div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Diferença Golos</div>
+            </div>
+            <div class="text-end">@Model.DiferencaDeGolos</div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Equipa Mais Usada</div>
+            </div>
+            <div class="text-end">@Model.EquipaMaisUsada</div>
+        </li>
+    </ol>
+
+</div>

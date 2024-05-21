@@ -1,0 +1,36 @@
+﻿@{
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<div class="container-fluid d-flex justify-content-center">
+
+<!-- Accordion -->
+    <div class="col-md-7">
+        <div id="myAccordion">
+
+            <div class="card panel">
+                <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Jogadores
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#myAccordion">
+                    <div class="card-body p-5 rounded-lg panel">
+                        @await Component.InvokeAsync("JogadoresClassificacao", new { })
+                    </div>
+                </div>
+            </div>
+
+            <div class="card panel">
+                <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    Equipas
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#myAccordion">
+                    <div class="card-body p-5 rounded-lg panel">
+                        @await Component.InvokeAsync("EquipaEstatisticas", new { })
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>

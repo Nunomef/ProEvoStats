@@ -1,0 +1,118 @@
+﻿@{
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+
+<!-- Modal -->
+<div class="modal fade" id="createTemporadaModal" tabindex="-1" role="dialog" aria-labelledby="createTemporadaModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="createTemporadaModalLabel">Criar Nova Temporada</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="createTemporadaForm" method="post" action="@Url.Action("CreateTemporada", "User")">
+                    <div class="form-group">
+                        <label for="descricao">Descrição</label>
+                        <input type="text" class="form-control" id="descricao" name="descricao" required>
+                    </div>
+                    @for (int i = 1; i <= 4; i++)
+                    {
+                        <div class="form-group">
+                            <label for="Jogador@i@Id">Jogador @i</label>
+                            <select id="Jogador@i@Id" name="Jogador@i@Id" class="form-control" asp-items="ViewBag.Jogadores"></select>
+                        </div>
+                    }
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="submit" class="btn btn-primary" form="createTemporadaForm">Criar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid d-flex justify-content-center">
+
+    <div class="col-md-5">
+        <div class="p-5 rounded-lg panel">
+            @await Component.InvokeAsync("TemporadaClassificacao", new { temporadaId = ViewBag.TemporadaId })
+            <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#createTemporadaModal">
+                Nova Temporada
+            </button>
+        </div>
+    </div>
+
+    <!-- Accordion -->
+    <div class="col-md-4">
+        <div id="myAccordion">
+            <div class="card panel">
+                <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Campeonato
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#myAccordion">
+                    <div class="card-body p-5 rounded-lg panel">
+                        <select id="campeonatoDropdown" class="form-control mb-3">
+                            @foreach (var campeonato in ViewBag.Campeonatos)
+                            {
+                                <option value="@campeonato.Value" selected="@(ViewBag.CampeonatoId == int.Parse(campeonato.Value) ? "selected" : null)">@campeonato.Text</option>
+                            }
+                        </select>
+                        <div id="campeonatoClassificacao">
+                            @await Component.InvokeAsync("CampeonatoClassificacao", new { campeonatoId = ViewBag.CampeonatoId })
+                        </div>
+                        <button id="viewChampButton" class="btn btn-primary float-right">Ver Campeonato</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card panel">
+                <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        Parelhas
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#myAccordion">
+                    <div class="card-body p-5 rounded-lg panel">
+                        @await Component.InvokeAsync("TemporadaParelhas", new { temporadaId = ViewBag.TemporadaId })
+                    </div>
+                </div>
+            </div>
+
+            <div class="card panel">
+                <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Equipas
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#myAccordion">
+                    <div class="card-body p-5 rounded-lg panel">
+                        @await Component.InvokeAsync("TemporadaEquipas", new { temporadaId = ViewBag.TemporadaId })
+                    </div>
+                </div>
+            </div>
+                        
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('campeonatoDropdown').addEventListener('change', function () {
+        var campeonatoId = this.value;
+        fetch('@Url.Action("UpdateCampeonatoClassificacao", "User")?campeonatoId=' + campeonatoId)
+            .then(response => response.text())
+            .then(html => {
+                var campeonatoClassificacaoDiv = document.querySelector('#campeonatoClassificacao');
+                campeonatoClassificacaoDiv.innerHTML = html;
+            });
+    });
+</script>
+
+<script>
+    document.getElementById('viewChampButton').addEventListener('click', function () {
+        var campeonatoId = document.getElementById('campeonatoDropdown').value;
+        location.href = '@Url.Action("UserInactiveChamp", "User")?id=' + campeonatoId;
+    });
+</script>
+

@@ -1,0 +1,147 @@
+﻿@using ProEvoStats_EVO7.ViewModels
+@model List<CampeonatoViewModel>
+@{
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+
+<!-- Modal Campeonato -->
+<div class="modal fade" id="createCampeonatoModal" tabindex="-1" role="dialog" aria-labelledby="createCampeonatoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="createCampeonatoModalLabel">Criar Novo Campeonato</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="createCampeonatoForm" method="post" action="@Url.Action("CreateCampeonato", "User")">
+                    <div class="form-group">
+                        <label for="descricao">Descrição</label>
+                        <input type="text" class="form-control" id="descricao" name="descricao" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="data">Data</label>
+                        <input type="date" class="form-control" id="data" name="data" required>
+                    </div>
+                    <input type="hidden" name="temporadaId" value="@ViewBag.TemporadaId">
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="submit" class="btn btn-primary" form="createCampeonatoForm">Criar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container-fluid d-flex justify-content-center">
+
+    <div class="col-md-5">
+        <div class="p-5 rounded-lg panel">
+            @await Component.InvokeAsync("TemporadaClassificacao", new { temporadaId = ViewBag.TemporadaId })
+            <form method="post" action="@Url.Action("EndSeason", "User")" class="float-right mr-2">
+                <input type="hidden" name="temporadaId" value="@ViewBag.TemporadaId">
+                <button type="submit" class="btn btn-danger">Terminar Temporada</button>
+            </form>
+            @if (ViewBag.UltimoCampeonatoStatus == "Inactive")
+            {
+                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#createCampeonatoModal">
+                    Novo Campeonato
+                </button>
+            }
+        </div>
+    </div>
+
+    <!-- Accordion -->
+    <div class="col-md-5">
+        <div id="myAccordion">
+            <div class="card panel">
+                <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Campeonato
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#myAccordion">
+                    <div class="card-body p-5 rounded-lg panel">
+                        <select id="campeonatoDropdown" class="form-control mb-3">
+                            @foreach (var campeonato in Model)
+                            {
+                                <option value="@campeonato.Id" data-status="@campeonato.Status" selected="@(ViewBag.CampeonatoId == campeonato.Id ? "selected" : null)">@campeonato.Descricao</option>
+                            }
+                        </select>
+                        <div id="campeonatoClassificacao">
+                            @await Component.InvokeAsync("CampeonatoClassificacao", new { campeonatoId = ViewBag.CampeonatoId })
+                        </div>
+                        <div class="text-right">
+                            <button id="viewChampButton" class="btn btn-primary">Ver Campeonato</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card panel">
+                <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        Parelhas
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#myAccordion">
+                    <div class="card-body p-5 rounded-lg panel">
+                        @await Component.InvokeAsync("TemporadaParelhas", new { temporadaId = ViewBag.TemporadaId })
+                    </div>
+                </div>
+            </div>
+
+            <div class="card panel">
+                <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Equipas
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#myAccordion">
+                    <div class="card-body p-5 rounded-lg panel">
+                        @await Component.InvokeAsync("TemporadaEquipas", new { temporadaId = ViewBag.TemporadaId })
+                    </div>
+                </div>
+            </div>
+                        
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('campeonatoDropdown').addEventListener('change', function () {
+        var campeonatoDropdown = document.getElementById('campeonatoDropdown');
+        var campeonatoId = campeonatoDropdown.value;
+        var campeonatoStatus = campeonatoDropdown.options[campeonatoDropdown.selectedIndex].getAttribute('data-status');
+        var viewChampButton = document.getElementById('viewChampButton');
+
+        if (campeonatoStatus == 'Active') {
+            viewChampButton.textContent = 'Continuar Campeonato';
+            viewChampButton.className = 'btn btn-warning';
+        } else {
+            viewChampButton.textContent = 'Ver Campeonato';
+            viewChampButton.className = 'btn btn-primary';
+        }
+
+        fetch('@Url.Action("UpdateCampeonatoClassificacao", "User")?campeonatoId=' + campeonatoId)
+            .then(response => response.text())
+            .then(html => {
+                var campeonatoClassificacaoDiv = document.querySelector('#campeonatoClassificacao');
+                campeonatoClassificacaoDiv.innerHTML = html;
+            });
+    });
+
+    document.getElementById('campeonatoDropdown').dispatchEvent(new Event('change'));
+</script>
+
+<script>
+    document.getElementById('viewChampButton').addEventListener('click', function () {
+        var campeonatoDropdown = document.getElementById('campeonatoDropdown');
+        var campeonatoId = campeonatoDropdown.value;
+        var campeonatoStatus = campeonatoDropdown.options[campeonatoDropdown.selectedIndex].getAttribute('data-status');
+        if (campeonatoStatus == 'Active') {
+            location.href = '@Url.Action("UserActiveChamp", "User")?id=' + campeonatoId;
+        } else {
+            location.href = '@Url.Action("UserInactiveChamp", "User")?id=' + campeonatoId;
+        }
+    });
+</script>

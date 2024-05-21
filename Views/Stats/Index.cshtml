@@ -1,0 +1,48 @@
+﻿@using ProEvoStats_EVO7.ViewModels
+@model List<TemporadaViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Temporada</th>
+            <th>Jogadores</th>
+            <th>Campeonatos</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var temporadaViewModel in Model)
+        {
+            <tr>
+                <td>
+                    @temporadaViewModel.Temporada.Descricao                    
+                    <a asp-action="Temporada" asp-route-temporadaId="@temporadaViewModel.Temporada.Id">Detalhes</a>
+                </td>
+                <td>                   
+                        @foreach (var jogador in temporadaViewModel.Jogadores)
+                        {
+                            @jogador.Username
+                            <a asp-action="Jogador" asp-route-jogadorId="@jogador.Id" asp-route-temporadaId="@temporadaViewModel.Temporada.Id">Detalhes</a>
+                            <br />
+                        }                    
+                </td>
+                <td>
+                    <ul>
+                        @foreach (var campeonato in temporadaViewModel.Campeonatos)
+                        {
+                            <li>
+                                @campeonato.Descricao
+                            <a asp-action="Campeonato" asp-route-campeonatoId="@campeonato.Id">Detalhes</a>
+                            </li>
+                        }
+                    </ul>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

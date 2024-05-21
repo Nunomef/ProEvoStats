@@ -1,0 +1,75 @@
+﻿body {
+}
+
+table {
+    font-family: 'Roboto', sans-serif !important;
+    color: #325367 !important;
+    font-size: 14px !important;
+    font-weight: 550 !important;
+}
+
+th {
+    font-size: 17px !important;
+    font-weight: 600 !important;
+    background-color: rgba(116, 153, 173, 0.7);
+    border: none !important;
+}
+
+    th:first-child {
+        border-top-left-radius: 10px !important;
+        border-bottom-left-radius: 10px !important;
+    }
+
+    th:last-child {
+        border-top-right-radius: 10px !important;
+        border-bottom-right-radius: 10px !important;
+    }
+
+.left-text {
+    float: left !important;
+    margin-right: 30px;
+    font-family: 'Roboto', sans-serif !important;
+    color: #132b3e !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+}
+
+.right-text {
+    float: right !important;
+    font-family: 'Roboto', sans-serif !important;
+    color: #325367 !important;
+    font-size: 14px !important;
+    font-weight: 550 !important;
+}
+
+.clearfix::after {
+    content: ""
+    display: table;
+}
+
+.stats-list li {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 1px solid white;
+    line-height: 40px;
+}
+
+
+    .stats-list li:nth-child(odd) {
+        background-color: rgba(135, 170, 181, 0.7);
+    }
+
+.second-list {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-family: 'Roboto', sans-serif !important;
+    color: #132b3e !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    text-align: center;
+}
+
+.player-names {
+    text-align: center;
+    font-weight: bold;
+}

@@ -1,0 +1,98 @@
+﻿body {
+    background: url('/images/background1.webp') no-repeat center center fixed;
+    background-size: cover;
+    
+}
+
+table {
+    font-family: 'Roboto', sans-serif !important;
+    color: #232f09 !important;
+    font-size: 14px !important;
+    font-weight: 550 !important;
+}
+
+th {
+    font-size: 17px !important;
+    font-weight: 600 !important;
+}
+
+.panel {
+    background-color: rgba(205, 221, 216, 0.7) !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+}
+
+.card-header {
+    font-family: 'Roboto', sans-serif !important;
+    color: #325367 !important;
+    font-size: 18px !important;
+    font-weight: 800 !important;
+}
+
+
+.btn-link.text-danger:hover {
+    color: #bd2130 !important;
+}
+
+.player-names {
+    text-align: center;
+    font-weight: bold;
+}
+
+h3, h4 {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif !important;
+    color: #132b3e !important;
+}
+
+
+h3 {    
+    font-size: 27px !important;
+    font-weight: 500 !important;
+    margin-bottom: 30px !important;
+}
+
+h4 {
+    margin-left: 15px !important;
+    font-size: 17px !important;
+    font-weight: 400 !important;
+}
+
+.btn-warning {
+    background-color: #50768f !important;
+    border-color: #50768f !important;
+    color: #cdddd8 !important;
+    font-weight: 500px !important;
+}
+
+.btn-warning:hover {
+    background-color: #325367 !important;
+    border-color: #325367 !important;
+    color: #cdddd8 !important;
+}
+
+.btn-primary {
+    background-color: #112434 !important;
+    border-color: #112434 !important;
+    color: #cdddd8 !important;
+    font-weight: 500px !important;
+}
+
+.btn-primary:hover {
+    background-color: #325367 !important;
+    border-color: #325367 !important;
+    color: #cdddd8 !important;
+}
+
+.bi-gear-fill {
+    color: #dbfdf4 !important;
+}
+
+.bi-gear-fill:hover {
+    color: #90b0c0 !important;
+}
+
+
+
+
+

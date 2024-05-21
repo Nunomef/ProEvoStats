@@ -1,0 +1,60 @@
+﻿@model ProEvoStats_EVO7.Models.Jogo
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Jogo</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ResultadoCasa)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ResultadoCasa)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ResultadoFora)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ResultadoFora)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ParelhaCasa)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ParelhaCasa.Jogador1.Username) & @Html.DisplayFor(model => model.ParelhaCasa.Jogador2.Username)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ParelhaFora)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ParelhaFora.Jogador1.Username) & @Html.DisplayFor(model => model.ParelhaFora.Jogador2.Username)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EquipaCasa)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EquipaCasa.Nome)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EquipaFora)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EquipaFora.Nome)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Campeonato)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Campeonato.Id)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

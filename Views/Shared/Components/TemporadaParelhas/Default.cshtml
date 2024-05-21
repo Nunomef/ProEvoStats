@@ -1,0 +1,49 @@
+﻿@using ProEvoStats_EVO7.ViewModels
+@model List<TemporadaParelhasViewModel>
+
+@{
+    Layout = "_ViewComponentLayout";
+}
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Parelha</th>
+            <th>Jogos</th>
+            <th></th>
+            <th>V</th>
+            <th>E</th>
+            <th>D</th>
+            <th></th>
+            <th>Gm</th>
+            <th>Gs</th>
+            <th>dG</th>
+            <th></th>
+            <th>Pontos</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            int position = 1;
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@(position++)</td>
+                    <td>@item.Username1 & @item.Username2</td>
+                    <td>@item.JogosDisputados</td>
+                    <td></td>
+                    <td>@item.Vitorias</td>
+                    <td>@item.Empates</td>
+                    <td>@item.Derrotas</td>
+                    <td></td>
+                    <td>@item.GolosMarcados</td>
+                    <td>@item.GolosSofridos</td>
+                    <td>@item.DiferencaDeGolos</td>
+                    <td></td>
+                    <td>@item.Pontos</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

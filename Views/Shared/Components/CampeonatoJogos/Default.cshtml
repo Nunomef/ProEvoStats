@@ -1,0 +1,46 @@
+﻿@model IEnumerable<ProEvoStats_EVO7.Models.Jogo>
+
+@{
+    Layout = "_ViewComponentLayout";
+}
+
+<table class="table table-hover">
+    <thead>
+        <tr class="text-center">
+            <th>
+                @Html.DisplayNameFor(model => model.EquipaCasa)
+            </th>
+            <th class="col-md-2">
+                @* @Html.DisplayNameFor(model => model.ResultadoCasa) *@
+            </th>
+            <th class="col-md-2">
+                @* @Html.DisplayNameFor(model => model.ResultadoFora) *@
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EquipaFora)
+            </th>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="text-center">
+                <td>
+                    <strong>@Html.DisplayFor(modelItem => item.ParelhaCasa.Jogador1.Username) & @Html.DisplayFor(modelItem => item.ParelhaCasa.Jogador2.Username)</strong>
+                    <br />
+                    <a class="text-black-50">@Html.DisplayFor(modelItem => item.EquipaCasa.Nome)</a>
+                </td>
+                <td style="vertical-align: middle; font-size: 18px; font-weight: 650;">
+                    @Html.DisplayFor(modelItem => item.ResultadoCasa)
+                </td>
+                <td style="vertical-align: middle; font-size: 18px; font-weight: 650;">
+                    @Html.DisplayFor(modelItem => item.ResultadoFora)
+                </td>
+                <td>
+                    <strong>@Html.DisplayFor(modelItem => item.ParelhaFora.Jogador1.Username) & @Html.DisplayFor(modelItem => item.ParelhaFora.Jogador2.Username)</strong>
+                    <br />
+                    <a class="text-black-50">@Html.DisplayFor(modelItem => item.EquipaFora.Nome)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

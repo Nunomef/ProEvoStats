@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\ProEvoStats_EVO7.props" />
+</Project>
